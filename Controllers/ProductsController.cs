@@ -29,7 +29,7 @@ namespace authtest.Controllers
             var data = konteks.Products;
             foreach (var x in data)
             {
-                allData.Add(new { x.id, x.name });
+                allData.Add(new { x.id, x.name, x.price});
             }
             return Ok(new { Message = "Success retreiving data", Status = true, Data = allData });
         }
